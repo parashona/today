@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মকর লগ্ন: ১২ রাশি ও ৯ গ্রহের প্রভাব চার্ট</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a3a5f;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 1000px; /* বড় টেবিলের জন্য মিনিমাম উইডথ */
+        }
+
+        th {
+            background-color: #1a3a5f;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 12px 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+        }
+
+        td {
+            padding: 10px 8px;
+            text-align: center;
+            border: 1px solid #eee;
+            line-height: 1.4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        tr:hover {
+            background-color: #f1f7ff;
+        }
+
+        /* বিশেষ হাইলাইটস */
+        .exalted { color: #27ae60; font-weight: bold; } /* উচ্চ - সবুজ */
+        .debilitated { color: #e74c3c; font-weight: bold; } /* নীচ - লাল */
+        .own-sign { color: #2980b9; font-weight: bold; } /* নিজ রাশি - নীল */
+        .yogakaraka { background-color: #f1c40f; color: #000; font-weight: bold; padding: 2px 4px; border-radius: 4px; } /* যোগকারক - হলুদ */
+        
+        .rashi-name {
+            font-weight: bold;
+            background-color: #eef2f7;
+            color: #2c3e50;
+        }
+
+        .bhab-col {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+
+        /* রাহু ও কেতু কলামের জন্য একটু আলাদা লুক */
+        .nodes {
+            font-style: italic;
+            background-color: #fafafa;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>মকর লগ্ন: ১২ রাশিতে প্রতিটা গ্রহের প্রভাবের চার্ট</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>রাশি</th>
+                    <th>ভাব</th>
+                    <th>☀️ সূর্য</th>
+                    <th>🌙 চন্দ্র</th>
+                    <th>♂️ মঙ্গল</th>
+                    <th>☿ বুধ</th>
+                    <th>♃ বৃহস্পতি</th>
+                    <th>♀️ শুক্র</th>
+                    <th>♄ শনি</th>
+                    <th>☊ রাহু</th>
+                    <th>☋ কেতু</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- মেষ -->
+                <tr>
+                    <td class="rashi-name">মেষ</td>
+                    <td class="bhab-col">৪</td>
+                    <td>গৃহে রূপান্তর</td>
+                    <td>গৃহ+সম্পর্ক</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>শিক্ষা</td>
+                    <td>গৃহজ্ঞান</td>
+                    <td>সুখ/সৃজন</td>
+                    <td class="debilitated">নীচ</td>
+                    <td class="nodes">unconventional home</td>
+                    <td class="nodes">home detachment</td>
+                </tr>
+                <!-- বৃষ -->
+                <tr>
+                    <td class="rashi-name">বৃষ</td>
+                    <td class="bhab-col">৫</td>
+                    <td>গভীর বুদ্ধি</td>
+                    <td class="exalted">উচ্চ</td>
+                    <td>creativity</td>
+                    <td>বুদ্ধি</td>
+                    <td>জ্ঞান</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>discipline</td>
+                    <td class="nodes">unusual creativity</td>
+                    <td class="nodes">inward intelligence</td>
+                </tr>
+                <!-- মিথুন -->
+                <tr>
+                    <td class="rashi-name">মিথুন</td>
+                    <td class="bhab-col">৬</td>
+                    <td>competition</td>
+                    <td>relationship stress</td>
+                    <td>action</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>service</td>
+                    <td>skill</td>
+                    <td>discipline</td>
+                    <td class="nodes">technology/competition</td>
+                    <td class="nodes">routine detachment</td>
+                </tr>
+                <!-- কর্কট -->
+                <tr>
+                    <td class="rashi-name">কর্কট</td>
+                    <td class="bhab-col">৭</td>
+                    <td>authority in partnership</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td class="debilitated">নীচ</td>
+                    <td>business</td>
+                    <td class="exalted">উচ্চ</td>
+                    <td>relationship</td>
+                    <td>serious partnership</td>
+                    <td class="nodes">unconventional partner</td>
+                    <td class="nodes">detachment</td>
+                </tr>
+                <!-- সিংহ -->
+                <tr>
+                    <td class="rashi-name">সিংহ</td>
+                    <td class="bhab-col">৮</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>transformation</td>
+                    <td>hidden power</td>
+                    <td>research</td>
+                    <td>deep knowledge</td>
+                    <td>creative transformation</td>
+                    <td>long transformation</td>
+                    <td class="nodes">hidden ambition</td>
+                    <td class="nodes">deep research</td>
+                </tr>
+                <!-- কন্যা -->
+                <tr>
+                    <td class="rashi-name">কন্যা</td>
+                    <td class="bhab-col">৯</td>
+                    <td>philosophy</td>
+                    <td>partner's fortune</td>
+                    <td>initiative</td>
+                    <td class="exalted">নিজ+উচ্চ</td>
+                    <td>practical wisdom</td>
+                    <td class="debilitated">নীচ</td>
+                    <td>disciplined belief</td>
+                    <td class="nodes">unconventional philosophy</td>
+                    <td class="nodes">questioning beliefs</td>
+                </tr>
+                <!-- তুলা -->
+                <tr>
+                    <td class="rashi-name">তুলা</td>
+                    <td class="bhab-col">১০</td>
+                    <td>career transformation</td>
+                    <td>partnership→career</td>
+                    <td>competition</td>
+                    <td>communication career</td>
+                    <td>expansion</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td class="exalted">উচ্চ</td>
+                    <td class="nodes">career ambition</td>
+                    <td class="nodes">career detachment</td>
+                </tr>
+                <!-- বৃশ্চিক -->
+                <tr>
+                    <td class="rashi-name">বৃশ্চিক</td>
+                    <td class="bhab-col">১১</td>
+                    <td>gains/authority</td>
+                    <td>emotional gains</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>network/business</td>
+                    <td>gains</td>
+                    <td>social/financial gains</td>
+                    <td>long-term gains</td>
+                    <td class="nodes">strong ambition</td>
+                    <td class="nodes">selective network</td>
+                </tr>
+                <!-- ধনু -->
+                <tr>
+                    <td class="rashi-name">ধনু</td>
+                    <td class="bhab-col">১২</td>
+                    <td>foreign/inner</td>
+                    <td>expenditure/distance</td>
+                    <td>energy drain</td>
+                    <td>foreign learning</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td>creative/foreign expense</td>
+                    <td>solitude</td>
+                    <td class="nodes">foreign/unusual</td>
+                    <td class="nodes">spiritual detachment</td>
+                </tr>
+                <!-- মকর -->
+                <tr>
+                    <td class="rashi-name">মকর</td>
+                    <td class="bhab-col">১</td>
+                    <td>transformation identity</td>
+                    <td>partner affects self</td>
+                    <td class="exalted">উচ্চ</td>
+                    <td>analytical self</td>
+                    <td class="debilitated">নীচ</td>
+                    <td><span class="yogakaraka">যোগকারক</span></td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td class="nodes">ambition</td>
+                    <td class="nodes">detachment</td>
+                </tr>
+                <!-- কুম্ভ -->
+                <tr>
+                    <td class="rashi-name">কুম্ভ</td>
+                    <td class="bhab-col">২</td>
+                    <td>authority in family</td>
+                    <td>family/finance</td>
+                    <td>assertive speech</td>
+                    <td>wealth/intellect</td>
+                    <td>knowledge/wealth</td>
+                    <td>wealth</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td class="nodes">unusual wealth</td>
+                    <td class="nodes">unusual values</td>
+                </tr>
+                <!-- মীন -->
+                <tr>
+                    <td class="rashi-name">মীন</td>
+                    <td class="bhab-col">৩</td>
+                    <td>courage/communication</td>
+                    <td>communication</td>
+                    <td>strong initiative</td>
+                    <td class="debilitated">নীচ</td>
+                    <td class="own-sign">নিজ রাশি</td>
+                    <td class="exalted">উচ্চ</td>
+                    <td>persistence</td>
+                    <td class="nodes">unconventional communication</td>
+                    <td class="nodes">inward communication</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // আপনি চাইলে এখানে ভবিষ্যতে সার্চ বা ফিল্টার করার স্ক্রিপ্ট যোগ করতে পারেন।
+    console.log("Makar Lagna Chart Loaded Successfully");
+</script>
+
+</body>
+</html>
